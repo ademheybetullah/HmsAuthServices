@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpic"
+    tools:context=".MainActivity4">
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@drawable/mailpng"
+        android:ems="11"
+        android:hint=" e-mail:"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CDFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@drawable/keypng"
+        android:ems="11"
+        android:hint=" new password:"
+        android:inputType="textPassword"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <EditText
+        android:id="@+id/verifityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@drawable/codepng"
+        android:ems="11"
+        android:hint=" verification code:"
+        android:inputType="number"
+        android:layerType="none"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <Button
+        android:id="@+id/codeBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btnbackground"
+        android:onClick="getcode"
+        android:text="Get Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifityEditText" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnbackground"
+        android:onClick="singin"
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
